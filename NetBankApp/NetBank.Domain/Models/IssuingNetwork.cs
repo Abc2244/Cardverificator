@@ -15,4 +15,3 @@ public class IssuingNetwork:EntityBase
     [Required]
     public string AllowedLengths { get; set; } = null!;
 }
-

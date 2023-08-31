@@ -12,8 +12,10 @@ namespace NetBank.Domain.Common
 
         public Task<IEnumerable<T>> FindAsync(Expression<Func<T, bool>> predicate);
 
-        public Task<T> UpdateAsync(T entity);
+        public Task UpdateAsync(T entity);
 
         public Task RemoveAsync(T entity);
+
+        public Task RemoveRangeAsync(IEnumerable<T> entityList);
     }
 }

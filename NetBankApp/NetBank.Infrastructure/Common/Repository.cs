@@ -34,38 +34,34 @@ namespace NetBank.Infrastructure.Common
 
         public async Task<T> GetByIdAsync(int id)
         {
-            var entity = await _appDbContext.Set<T>().FindAsync(id);
-            return entity!;
+            return await _appDbContext.Set<T>().FindAsync(id);
         }
 
         public async Task RemoveAsync(T entity)
         {
-            var id = entity?.Id;
-            var original = await _appDbContext.Set<T>().FindAsync(id);
-
-            if (original is null)
-            {
-                throw new NotFoundException($"IssuingNetwork with Id={id} Not Found");
-            }
-
-            _appDbContext.Set<T>().Remove(entity!);
+            _appDbContext.Set<T>().Remove(entity);
             await _appDbContext.SaveChangesAsync();
         }
 
-        public async Task<T> UpdateAsync(T entity)
+        public async Task UpdateAsync(T entity)
         {
-            var id = entity?.Id;
+            var id = entity.Id;
             var original = await _appDbContext.Set<T>().FindAsync(id);
 
             if (original is null)
             {
-                throw new NotFoundException($"IssuingNetwork with Id={id} Not Found");
+                var entityType = entity.GetType().Name;
+                throw new NotFoundException($"{entityType} [{id}] Not Found");
             }
 
-            _appDbContext.Entry(original).CurrentValues.SetValues(entity!);
+            _appDbContext.Entry(original).CurrentValues.SetValues(entity);
             await _appDbContext.SaveChangesAsync();
+        }
 
-            return entity!;
+        public async Task RemoveRangeAsync(IEnumerable<T> entityList)
+        {
+            _appDbContext.Set<T>().RemoveRange(entityList);
+            await _appDbContext.SaveChangesAsync();
         }
     }
 }
