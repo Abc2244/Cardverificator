@@ -1,0 +1,5 @@
+C:\Users\LEON\Documents\GitHub\ServicesDevelopment\Exams\Exam-01\NetBankApp\NetBank.Infrastructure\obj\Debug\net6.0\NetBank.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\LEON\Documents\GitHub\ServicesDevelopment\Exams\Exam-01\NetBankApp\NetBank.Infrastructure\obj\Debug\net6.0\NetBank.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LEON\Documents\GitHub\ServicesDevelopment\Exams\Exam-01\NetBankApp\NetBank.Infrastructure\obj\Debug\net6.0\NetBank.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\LEON\Documents\GitHub\ServicesDevelopment\Exams\Exam-01\NetBankApp\NetBank.Infrastructure\obj\Debug\net6.0\NetBank.Infrastructure.AssemblyInfo.cs
+C:\Users\LEON\Documents\GitHub\ServicesDevelopment\Exams\Exam-01\NetBankApp\NetBank.Infrastructure\obj\Debug\net6.0\NetBank.Infrastructure.csproj.CoreCompileInputs.cache
