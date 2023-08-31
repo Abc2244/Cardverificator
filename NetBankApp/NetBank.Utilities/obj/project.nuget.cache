@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RAYZI8VxtC/3rQjtDCiXzxHj1ZhOf2sbTWO9nWrw/AtB5K+6Yl4IrPSwpl/VV3qy29gJPZfoIFDahQfoHmmqrg==",
+  "dgSpecHash": "iIpMp29wxdlxafJ5TchvierVAp4EyBOshChybCH+cyVGhld2hnHbIrxRwMgw6tRPkW+ta6X6F5XPUrWHGFtjlw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\LEON\\Documents\\GitHub\\ServicesDevelopment\\Exams\\Exam-01\\NetBankApp\\NetBank.Utilities\\NetBank.Utilities.csproj",
+  "projectFilePath": "C:\\Users\\LEON\\Documents\\GitHub\\Cardverificator\\NetBankApp\\NetBank.Utilities\\NetBank.Utilities.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

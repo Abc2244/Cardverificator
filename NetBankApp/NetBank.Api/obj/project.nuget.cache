@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qFEp8MJ3S6VW6MIjYFt7shcGRnOmJGLzz2sQSMX6bQtxVuZQ+omu4Eb2DT8Mvhg46EAyzRWrB5U/RENlwpdOCQ==",
+  "dgSpecHash": "HG6/r5E5L6sFiTWH4LhIgkeuxZPoyoJQA6hQCR0v8jjEX/g4WjMchn1rB6FH4fcmQXOQXe2BjGmJx5zOOM8/Ug==",
   "success": true,
-  "projectFilePath": "C:\\Users\\LEON\\Documents\\GitHub\\ServicesDevelopment\\Exams\\Exam-01\\NetBankApp\\NetBank.Api\\NetBank.Api.csproj",
+  "projectFilePath": "C:\\Users\\LEON\\Documents\\GitHub\\Cardverificator\\NetBankApp\\NetBank.Api\\NetBank.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\LEON\\.nuget\\packages\\google.protobuf\\3.21.9\\google.protobuf.3.21.9.nupkg.sha512",
     "C:\\Users\\LEON\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

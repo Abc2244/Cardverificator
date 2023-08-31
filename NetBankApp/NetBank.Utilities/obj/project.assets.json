@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\LEON\\Documents\\GitHub\\ServicesDevelopment\\Exams\\Exam-01\\NetBankApp\\NetBank.Utilities\\NetBank.Utilities.csproj",
+      "projectUniqueName": "C:\\Users\\LEON\\Documents\\GitHub\\Cardverificator\\NetBankApp\\NetBank.Utilities\\NetBank.Utilities.csproj",
       "projectName": "NetBank.Utilities",
-      "projectPath": "C:\\Users\\LEON\\Documents\\GitHub\\ServicesDevelopment\\Exams\\Exam-01\\NetBankApp\\NetBank.Utilities\\NetBank.Utilities.csproj",
+      "projectPath": "C:\\Users\\LEON\\Documents\\GitHub\\Cardverificator\\NetBankApp\\NetBank.Utilities\\NetBank.Utilities.csproj",
       "packagesPath": "C:\\Users\\LEON\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\LEON\\Documents\\GitHub\\ServicesDevelopment\\Exams\\Exam-01\\NetBankApp\\NetBank.Utilities\\obj\\",
+      "outputPath": "C:\\Users\\LEON\\Documents\\GitHub\\Cardverificator\\NetBankApp\\NetBank.Utilities\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\LEON\\AppData\\Roaming\\NuGet\\NuGet.Config",

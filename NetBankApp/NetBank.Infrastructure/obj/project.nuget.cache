@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YfBK3e8sMRcJsn6564LumSB99G6JqKdNRpd2mRHLuUaNdFUKx2KZ3Ye12Rnfe5xL6KZKId1PGwPRu9TipiW+lw==",
+  "dgSpecHash": "AdJlSjJNAXPWIg00L4su3ZWPzfwoVca7SeFqwgcqW5AoWHI8iT65/vu+lrZPpVJmWCa/D3TzQWLg6rE73Bg0Sg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\LEON\\Documents\\GitHub\\ServicesDevelopment\\Exams\\Exam-01\\NetBankApp\\NetBank.Infrastructure\\NetBank.Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\LEON\\Documents\\GitHub\\Cardverificator\\NetBankApp\\NetBank.Infrastructure\\NetBank.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\LEON\\.nuget\\packages\\google.protobuf\\3.21.9\\google.protobuf.3.21.9.nupkg.sha512",
     "C:\\Users\\LEON\\.nuget\\packages\\k4os.compression.lz4\\1.3.5\\k4os.compression.lz4.1.3.5.nupkg.sha512",
