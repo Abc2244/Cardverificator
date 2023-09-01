@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace NetBank.Domain.Common
 {
-    public class StringTransformer
+    public class DataTransformer
     {
         public static List<int>? ComaSeparatedValuesToIntList(string csv)
         {

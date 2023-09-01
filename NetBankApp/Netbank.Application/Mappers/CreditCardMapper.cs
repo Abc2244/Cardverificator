@@ -11,25 +11,23 @@ namespace Netbank.Application.Mappers
 {
     public class CreditCardMapper
     {
-        public static IssuingNetworkData ToIssuingNetworkData(IssuingNetwork issuignNetwork)
-        {
-            IssuingNetworkData issuingNetworkData = new();
-            issuingNetworkData.Name = issuignNetwork.Name;
-            issuingNetworkData.StartsWithNumbers = StringTransformer.ComaSeparatedValuesToIntList(issuignNetwork.StartsWithNumbers);
-            issuingNetworkData.InRange = StringTransformer.HyphenSeparatedValuesToRangeNumber(issuignNetwork.InRange);
-            issuingNetworkData.AllowedLengths = StringTransformer.ComaSeparatedValuesToIntList(issuignNetwork.AllowedLengths);
-            return issuingNetworkData;
 
+        public static IssuingNetworkData ConvertToNetworkData(IssuingNetwork network)
+        {
+            return new IssuingNetworkData
+            {
+                Name = network.Name,
+                StartsWithNumbers = DataTransformer.ComaSeparatedValuesToIntList(network.StartsWithNumbers),
+                InRange = DataTransformer.HyphenSeparatedValuesToRangeNumber(network.InRange),
+                AllowedLengths = DataTransformer.ComaSeparatedValuesToIntList(network.AllowedLengths)
+            };
         }
 
-        public static List<IssuingNetworkData> ToIssuingNetworkDataList(List<IssuingNetwork> issuingNetworks) {
-            List<IssuingNetworkData> issuingNetworkDataList = new();
-            foreach(IssuingNetwork issuingNetwork in issuingNetworks)
-            {
-                IssuingNetworkData issuignNetworkData = ToIssuingNetworkData(issuingNetwork);
-                issuingNetworkDataList.Add(issuignNetworkData);
-            }
-            return issuingNetworkDataList;
+        public static List<IssuingNetworkData> ConvertToNetworkDataList(IEnumerable<IssuingNetwork> networks)
+        {
+            return networks.Select(ConvertToNetworkData).ToList();
         }
     }
 }
+
+

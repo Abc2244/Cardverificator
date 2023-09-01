@@ -32,7 +32,7 @@ public class IssuingNetworkData
             string numString = this.InRange.MinValue.ToString();
             int numLength = numString.Length;
             string cuttedCreditCard = creditCardNumber.Substring(0, numLength);
-            int? doubleCreditCard = StringTransformer.StringToInt(cuttedCreditCard);
+            int? doubleCreditCard = DataTransformer.StringToInt(cuttedCreditCard);
             if (doubleCreditCard >= this.InRange.MinValue && doubleCreditCard <= this.InRange.MaxValue)
             {
                 isValid = true;

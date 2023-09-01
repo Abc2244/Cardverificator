@@ -42,7 +42,7 @@ public class CreditCardService : ICreditCardService
         // Usar LoadData en lugar de LoadIssuingNetworkData
         List<IssuingNetworkData> issuingNetworkDataList = await LoadData();
 
-        if (StringTransformer.StringToDoble(creditCardNumber) != null)
+        if (DataTransformer.StringToDoble(creditCardNumber) != null)
         {
             // Identifica la red emisora primero.
             foundIssuingNetworkDataName = FindIssuingNetworkOwnerName(issuingNetworkDataList, creditCardNumber);
@@ -88,7 +88,8 @@ public class CreditCardService : ICreditCardService
     private async Task<List<IssuingNetworkData>> LoadIssuingNetworkData()
     {
         List<IssuingNetwork> issuingNetworks = await this.GetIssuingNetworks();
-        List<IssuingNetworkData> issuingNetworkDataList = CreditCardMapper.ToIssuingNetworkDataList(issuingNetworks);
+        List<IssuingNetworkData> issuingNetworkDataList = CreditCardMapper.ConvertToNetworkDataList(issuingNetworks);
+
         // Convert Data to List Data
         return issuingNetworkDataList;
     }
