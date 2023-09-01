@@ -1,6 +1,4 @@
 ﻿using NetBank.Domain.Common;
-using NetBank.Domain.Define;
-using System;
 
 namespace NetBank.Domain.Dto;
 
@@ -11,6 +9,7 @@ public class IssuingNetworkData
     public RangeNumber? InRange { get; set; } = null!;
 
     public List<int>? AllowedLengths { get; set; }
+
     public Boolean IsCardFromThisNetwork(string creditCardNumber)
     {
         Boolean isIdentified = false;
@@ -22,8 +21,6 @@ public class IssuingNetworkData
 
         return isIdentified;
     }
-
-
 
     private Boolean ValidateInRange(string creditCardNumber)
     {
@@ -61,7 +58,4 @@ public class IssuingNetworkData
         }
         return isValid;
     }
-
-
-
 }

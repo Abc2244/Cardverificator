@@ -64,20 +64,14 @@ public class CreditCardService : ICreditCardService
         this.Result = new CreditCardResult(foundIssuingNetworkDataName, isValidCreditCard);
         return validationResultType;
     }
-
     private static string? FindIssuingNetworkOwnerName(List<IssuingNetworkData> issuingNetworkDataList, string creditCardNumber)
     {
-        string? foundIssuingNetworkDataName = null;
-        foreach (IssuingNetworkData issuingNetworkData in issuingNetworkDataList)
-        {
-            if (issuingNetworkData.IsCardFromThisNetwork(creditCardNumber))
-            {
-                foundIssuingNetworkDataName ??= issuingNetworkData.Name;
-                break;
-            }
-        }
-        return foundIssuingNetworkDataName;
+        var foundIssuingNetworkData = issuingNetworkDataList
+            .Find(issuingNetworkData => issuingNetworkData.IsCardFromThisNetwork(creditCardNumber));
+
+        return foundIssuingNetworkData?.Name;
     }
+
 
     private async Task<List<IssuingNetworkData>> LoadIssuingNetworkData()
     {

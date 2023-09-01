@@ -139,3 +139,4 @@ C:\Users\LEON\Documents\GitHub\Cardverificator\NetBankApp\NetBank.Api\obj\Debug\
 C:\Users\LEON\Documents\GitHub\Cardverificator\NetBankApp\NetBank.Api\obj\Debug\net7.0\NetBank.Api.pdb
 C:\Users\LEON\Documents\GitHub\Cardverificator\NetBankApp\NetBank.Api\obj\Debug\net7.0\NetBank.Api.genruntimeconfig.cache
 C:\Users\LEON\Documents\GitHub\Cardverificator\NetBankApp\NetBank.Api\obj\Debug\net7.0\ref\NetBank.Api.dll
+C:\Users\LEON\Documents\GitHub\Cardverificator\NetBankApp\NetBank.Api\obj\Debug\net7.0\NetBank.Api.MvcApplicationPartsAssemblyInfo.cs
