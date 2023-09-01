@@ -51,11 +51,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\LEON\\Documents\\GitHub\\ServicesDevelopment\\Exams\\Exam-01\\NetBankApp\\Netbank.Application\\Netbank.Application.csproj",
+      "projectUniqueName": "C:\\Users\\LEON\\Documents\\GitHub\\Cardverificator\\NetBankApp\\Netbank.Application\\Netbank.Application.csproj",
       "projectName": "Netbank.Application",
-      "projectPath": "C:\\Users\\LEON\\Documents\\GitHub\\ServicesDevelopment\\Exams\\Exam-01\\NetBankApp\\Netbank.Application\\Netbank.Application.csproj",
+      "projectPath": "C:\\Users\\LEON\\Documents\\GitHub\\Cardverificator\\NetBankApp\\Netbank.Application\\Netbank.Application.csproj",
       "packagesPath": "C:\\Users\\LEON\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\LEON\\Documents\\GitHub\\ServicesDevelopment\\Exams\\Exam-01\\NetBankApp\\Netbank.Application\\obj\\",
+      "outputPath": "C:\\Users\\LEON\\Documents\\GitHub\\Cardverificator\\NetBankApp\\Netbank.Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\LEON\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -72,11 +72,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\LEON\\Documents\\GitHub\\ServicesDevelopment\\Exams\\Exam-01\\NetBankApp\\NetBank.Domain\\NetBank.Domain.csproj": {
-              "projectPath": "C:\\Users\\LEON\\Documents\\GitHub\\ServicesDevelopment\\Exams\\Exam-01\\NetBankApp\\NetBank.Domain\\NetBank.Domain.csproj"
+            "C:\\Users\\LEON\\Documents\\GitHub\\Cardverificator\\NetBankApp\\NetBank.Domain\\NetBank.Domain.csproj": {
+              "projectPath": "C:\\Users\\LEON\\Documents\\GitHub\\Cardverificator\\NetBankApp\\NetBank.Domain\\NetBank.Domain.csproj"
             },
-            "C:\\Users\\LEON\\Documents\\GitHub\\ServicesDevelopment\\Exams\\Exam-01\\NetBankApp\\NetBank.Utilities\\NetBank.Utilities.csproj": {
-              "projectPath": "C:\\Users\\LEON\\Documents\\GitHub\\ServicesDevelopment\\Exams\\Exam-01\\NetBankApp\\NetBank.Utilities\\NetBank.Utilities.csproj"
+            "C:\\Users\\LEON\\Documents\\GitHub\\Cardverificator\\NetBankApp\\NetBank.Utilities\\NetBank.Utilities.csproj": {
+              "projectPath": "C:\\Users\\LEON\\Documents\\GitHub\\Cardverificator\\NetBankApp\\NetBank.Utilities\\NetBank.Utilities.csproj"
             }
           }
         }

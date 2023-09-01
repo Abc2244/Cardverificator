@@ -10,21 +10,18 @@ public class IssuingNetworkData
     public List<int>? StartsWithNumbers { get; set; } = null!;
     public RangeNumber? InRange { get; set; } = null!;
     public List<int> AllowedLengths { get; set; } = null!;
-
     public Boolean ValidateCreditCard(string creditCardNumber)
     {
-        Boolean isValid = false;
- 
-        if (this.ValidateAllowedLengths(creditCardNumber))
-        {
-            if (this.ValidateStartsNumbers(creditCardNumber) || this.ValidateInRange(creditCardNumber))
-            {
-                isValid = true;
+        Boolean isIdentified = false;
 
-            }
+        if (this.ValidateStartsNumbers(creditCardNumber) || this.ValidateInRange(creditCardNumber))
+        {
+            isIdentified = true;
         }
-        return isValid;
+
+        return isIdentified;
     }
+
 
     private Boolean ValidateAllowedLengths(string creditCardNumber)
     {
@@ -58,13 +55,13 @@ public class IssuingNetworkData
     private Boolean ValidateStartsNumbers(string creditCardNumber)
     {
         Boolean isValid = false;
-        if(this.StartsWithNumbers != null)
+        if (this.StartsWithNumbers != null)
         {
             foreach (int num in this.StartsWithNumbers)
             {
                 string numString = num.ToString();
                 int numLength = numString.Length;
-                string cuttedCreditCard = numString.Substring(0, numLength);
+                string cuttedCreditCard = creditCardNumber.Substring(0, numLength);
                 if (cuttedCreditCard == numString)
                 {
                     isValid = true;
@@ -74,6 +71,7 @@ public class IssuingNetworkData
         }
         return isValid;
     }
+
 
 
 }
