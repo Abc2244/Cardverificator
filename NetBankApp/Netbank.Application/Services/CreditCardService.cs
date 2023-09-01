@@ -16,8 +16,7 @@ public class CreditCardService : ICreditCardService
 
     private readonly IIssuingNetworkRepository _issuingNetworkRepository;
 
-    // Regular Expression To Validate Only Numbers
-    private const string NUMBER_REGEX = "^[0-9]*$";
+
 
     #endregion Loval-Vars
 

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Netbank.Application.Mappers
 {
-    public class CreditCardMapper
+    public static class CreditCardMapper
     {
 
         public static IssuingNetworkData ConvertToNetworkData(IssuingNetwork network)
@@ -17,11 +17,14 @@ namespace Netbank.Application.Mappers
             return new IssuingNetworkData
             {
                 Name = network.Name,
-                StartsWithNumbers = DataTransformer.ComaSeparatedValuesToIntList(network.StartsWithNumbers),
-                InRange = DataTransformer.HyphenSeparatedValuesToRangeNumber(network.InRange),
-                AllowedLengths = DataTransformer.ComaSeparatedValuesToIntList(network.AllowedLengths)
+                StartsWithNumbers = network.StartsWithNumbers != null ? DataTransformer.ComaSeparatedValuesToIntList(network.StartsWithNumbers) : null,
+                InRange = network.InRange != null ? DataTransformer.HyphenSeparatedValuesToRangeNumber(network.InRange) : null,
+                AllowedLengths = network.AllowedLengths != null ? DataTransformer.ComaSeparatedValuesToIntList(network.AllowedLengths) : null
+
             };
         }
+
+
 
         public static List<IssuingNetworkData> ConvertToNetworkDataList(IEnumerable<IssuingNetwork> networks)
         {
