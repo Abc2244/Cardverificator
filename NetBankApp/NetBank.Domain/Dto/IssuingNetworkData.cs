@@ -1,4 +1,4 @@
-﻿using NetBank.Domain;
+﻿using NetBank.Domain.Common;
 using NetBank.Domain.Define;
 using System;
 
@@ -23,17 +23,6 @@ public class IssuingNetworkData
     }
 
 
-    private Boolean ValidateAllowedLengths(string creditCardNumber)
-    {
-        Boolean isValid = false;
-        if(this.AllowedLengths.Contains(creditCardNumber.Length))
-        {
-            isValid = true;
-        }
-        return isValid;
-
-
-    }
 
     private Boolean ValidateInRange(string creditCardNumber)
     {

@@ -37,6 +37,7 @@ public static class CreditCardValidator
         }
         return (sum % 10) == 0;
     }
+ 
 
     private static StringBuilder GetDigits(string creditCardNumber)
     {
@@ -48,4 +49,17 @@ public static class CreditCardValidator
         }
         return digitsOnly;
     }
+
+
+    public static bool IsValidLength(string creditCardNumber, List<int> allowedLengths)
+    {
+        Boolean isValid = false;
+        if (allowedLengths.Contains(creditCardNumber.Length))
+        {
+            isValid = true;
+        }
+        return isValid;
+    }
+
+
 }

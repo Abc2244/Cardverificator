@@ -1,4 +1,4 @@
-﻿using NetBank.Domain;
+﻿using NetBank.Domain.Common;
 using NetBank.Domain.Dto;
 using NetBank.Domain.Models;
 using System;

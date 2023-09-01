@@ -1,6 +1,6 @@
 ﻿using Netbank.Application.Interfaces;
 using Netbank.Application.Mappers;
-using NetBank.Domain;
+using NetBank.Domain.Common;
 using NetBank.Domain.Define;
 using NetBank.Domain.Dto;
 using NetBank.Domain.Interfaces.Repositories;
@@ -31,13 +31,16 @@ public class CreditCardService : ICreditCardService
     {
         _issuingNetworkRepository = issuingNetworkRepository;
     }
+   
 
     public async Task<ValidationResultType> Validate(string creditCardNumber)
     {
         ValidationResultType validationResultType;
         Boolean isValidCreditCard = false;
         string? foundIssuingNetworkDataName;
-        List<IssuingNetworkData> issuingNetworkDataList = await LoadIssuingNetworkData();
+
+        // Usar LoadData en lugar de LoadIssuingNetworkData
+        List<IssuingNetworkData> issuingNetworkDataList = await LoadData();
 
         if (StringTransformer.StringToDoble(creditCardNumber) != null)
         {
@@ -96,4 +99,10 @@ public class CreditCardService : ICreditCardService
         IEnumerable<IssuingNetwork> issuingNetworks = await this._issuingNetworkRepository.GetAllAsync();
         return issuingNetworks.ToList();
     }
+    private async Task<List<IssuingNetworkData>> LoadData()
+    {
+        // Cargar datos de la red emisora
+        return await LoadIssuingNetworkData();
+    }
+
 }

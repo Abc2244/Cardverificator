@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NetBank.Domain
+namespace NetBank.Domain.Common
 {
     public class StringTransformer
     {
@@ -34,7 +34,7 @@ namespace NetBank.Domain
             if (hsv != null)
             {
                 List<int> intList = HyphenSeparatedValuesToIntList(hsv);
-                
+
                 if (intList.Count == 2)
                 {
                     rangeNumber = new RangeNumber();
@@ -81,12 +81,12 @@ namespace NetBank.Domain
             return num;
         }
 
-        public static Double? StringToDoble(string str)
+        public static double? StringToDoble(string str)
         {
-            Double? num;
+            double? num;
             try
             {
-                num = Double.Parse(str);
+                num = double.Parse(str);
             }
             catch (Exception e)
             {
