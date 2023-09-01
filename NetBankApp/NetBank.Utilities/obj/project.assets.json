@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {}
+    "net7.0": {
+      "NetBank.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/NetBank.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NetBank.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "NetBank.Domain/1.0.0": {
+      "type": "project",
+      "path": "../NetBank.Domain/NetBank.Domain.csproj",
+      "msbuildProject": "../NetBank.Domain/NetBank.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net7.0": []
+    "net7.0": [
+      "NetBank.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\LEON\\.nuget\\packages\\": {}
@@ -13,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\LEON\\Documents\\GitHub\\Cardverificator\\NetBankApp\\NetBank.Utilities\\NetBank.Utilities.csproj",
+      "projectUniqueName": "C:\\Users\\LEON\\Documents\\GitHub\\ServicesDevelopment\\Exams\\Exam-01\\NetBankApp\\NetBank.Utilities\\NetBank.Utilities.csproj",
       "projectName": "NetBank.Utilities",
-      "projectPath": "C:\\Users\\LEON\\Documents\\GitHub\\Cardverificator\\NetBankApp\\NetBank.Utilities\\NetBank.Utilities.csproj",
+      "projectPath": "C:\\Users\\LEON\\Documents\\GitHub\\ServicesDevelopment\\Exams\\Exam-01\\NetBankApp\\NetBank.Utilities\\NetBank.Utilities.csproj",
       "packagesPath": "C:\\Users\\LEON\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\LEON\\Documents\\GitHub\\Cardverificator\\NetBankApp\\NetBank.Utilities\\obj\\",
+      "outputPath": "C:\\Users\\LEON\\Documents\\GitHub\\ServicesDevelopment\\Exams\\Exam-01\\NetBankApp\\NetBank.Utilities\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\LEON\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -33,7 +52,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\LEON\\Documents\\GitHub\\ServicesDevelopment\\Exams\\Exam-01\\NetBankApp\\NetBank.Domain\\NetBank.Domain.csproj": {
+              "projectPath": "C:\\Users\\LEON\\Documents\\GitHub\\ServicesDevelopment\\Exams\\Exam-01\\NetBankApp\\NetBank.Domain\\NetBank.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

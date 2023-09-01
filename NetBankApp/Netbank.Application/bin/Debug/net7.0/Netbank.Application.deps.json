@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v7.0": {
       "Netbank.Application/1.0.0": {
         "dependencies": {
-          "NetBank.Domain": "1.0.0"
+          "NetBank.Domain": "1.0.0",
+          "NetBank.Utilities": "1.0.0"
         },
         "runtime": {
           "Netbank.Application.dll": {}
@@ -17,6 +18,14 @@
       "NetBank.Domain/1.0.0": {
         "runtime": {
           "NetBank.Domain.dll": {}
+        }
+      },
+      "NetBank.Utilities/1.0.0": {
+        "dependencies": {
+          "NetBank.Domain": "1.0.0"
+        },
+        "runtime": {
+          "NetBank.Utilities.dll": {}
         }
       }
     }
@@ -28,6 +37,11 @@
       "sha512": ""
     },
     "NetBank.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NetBank.Utilities/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -489,7 +489,8 @@
       },
       "Netbank.Application/1.0.0": {
         "dependencies": {
-          "NetBank.Domain": "1.0.0"
+          "NetBank.Domain": "1.0.0",
+          "NetBank.Utilities": "1.0.0"
         },
         "runtime": {
           "Netbank.Application.dll": {}
@@ -508,6 +509,14 @@
         },
         "runtime": {
           "NetBank.Infrastructure.dll": {}
+        }
+      },
+      "NetBank.Utilities/1.0.0": {
+        "dependencies": {
+          "NetBank.Domain": "1.0.0"
+        },
+        "runtime": {
+          "NetBank.Utilities.dll": {}
         }
       }
     }
@@ -921,6 +930,11 @@
       "sha512": ""
     },
     "NetBank.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NetBank.Utilities/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
