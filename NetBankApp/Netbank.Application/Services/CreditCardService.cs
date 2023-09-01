@@ -6,7 +6,6 @@ using NetBank.Domain.Dto;
 using NetBank.Domain.Interfaces.Repositories;
 using NetBank.Domain.Models;
 using NetBank.Utilities;
-using System.Linq;
 
 namespace Netbank.Application.Services;
 
@@ -15,8 +14,6 @@ public class CreditCardService : ICreditCardService
     #region Loval-Vars
 
     private readonly IIssuingNetworkRepository _issuingNetworkRepository;
-
-
 
     #endregion Loval-Vars
 
@@ -30,7 +27,6 @@ public class CreditCardService : ICreditCardService
     {
         _issuingNetworkRepository = issuingNetworkRepository;
     }
-   
 
     public async Task<ValidationResultType> Validate(string creditCardNumber)
     {
@@ -69,7 +65,6 @@ public class CreditCardService : ICreditCardService
         return validationResultType;
     }
 
-
     private static string? FindIssuingNetworkOwnerName(List<IssuingNetworkData> issuingNetworkDataList, string creditCardNumber)
     {
         string? foundIssuingNetworkDataName = null;
@@ -99,10 +94,10 @@ public class CreditCardService : ICreditCardService
         IEnumerable<IssuingNetwork> issuingNetworks = await this._issuingNetworkRepository.GetAllAsync();
         return issuingNetworks.ToList();
     }
+
     private async Task<List<IssuingNetworkData>> LoadData()
     {
         // Cargar datos de la red emisora
         return await LoadIssuingNetworkData();
     }
-
 }

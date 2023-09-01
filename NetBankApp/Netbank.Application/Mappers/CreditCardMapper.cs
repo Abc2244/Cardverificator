@@ -17,14 +17,11 @@ namespace Netbank.Application.Mappers
             return new IssuingNetworkData
             {
                 Name = network.Name,
-                StartsWithNumbers = network.StartsWithNumbers != null ? DataTransformer.ComaSeparatedValuesToIntList(network.StartsWithNumbers) : null,
-                InRange = network.InRange != null ? DataTransformer.HyphenSeparatedValuesToRangeNumber(network.InRange) : null,
-                AllowedLengths = network.AllowedLengths != null ? DataTransformer.ComaSeparatedValuesToIntList(network.AllowedLengths) : null
-
+                StartsWithNumbers = DataTransformer.ComaSeparatedValuesToIntList(network.StartsWithNumbers),
+                InRange = DataTransformer.HyphenSeparatedValuesToRangeNumber(network.InRange),
+                AllowedLengths = DataTransformer.ComaSeparatedValuesToIntList(network.AllowedLengths)
             };
         }
-
-
 
         public static List<IssuingNetworkData> ConvertToNetworkDataList(IEnumerable<IssuingNetwork> networks)
         {
@@ -32,5 +29,3 @@ namespace Netbank.Application.Mappers
         }
     }
 }
-
-

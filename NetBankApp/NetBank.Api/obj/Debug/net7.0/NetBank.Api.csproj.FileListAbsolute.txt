@@ -124,7 +124,6 @@ C:\Users\LEON\Documents\GitHub\Cardverificator\NetBankApp\NetBank.Api\obj\Debug\
 C:\Users\LEON\Documents\GitHub\Cardverificator\NetBankApp\NetBank.Api\obj\Debug\net7.0\NetBank.Api.AssemblyInfoInputs.cache
 C:\Users\LEON\Documents\GitHub\Cardverificator\NetBankApp\NetBank.Api\obj\Debug\net7.0\NetBank.Api.AssemblyInfo.cs
 C:\Users\LEON\Documents\GitHub\Cardverificator\NetBankApp\NetBank.Api\obj\Debug\net7.0\NetBank.Api.csproj.CoreCompileInputs.cache
-C:\Users\LEON\Documents\GitHub\Cardverificator\NetBankApp\NetBank.Api\obj\Debug\net7.0\NetBank.Api.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\LEON\Documents\GitHub\Cardverificator\NetBankApp\NetBank.Api\obj\Debug\net7.0\NetBank.Api.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\LEON\Documents\GitHub\Cardverificator\NetBankApp\NetBank.Api\obj\Debug\net7.0\staticwebassets\msbuild.NetBank.Api.Microsoft.AspNetCore.StaticWebAssets.props
 C:\Users\LEON\Documents\GitHub\Cardverificator\NetBankApp\NetBank.Api\obj\Debug\net7.0\staticwebassets\msbuild.build.NetBank.Api.props
