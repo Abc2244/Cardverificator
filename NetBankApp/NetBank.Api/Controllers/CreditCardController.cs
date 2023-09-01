@@ -19,7 +19,7 @@ public class CreditCardController : ControllerBase
     }
 
     [HttpGet("{creditcardNumber}")]
-    public async Task<IActionResult> GetCreditCarDatad(string creditcardNumber)
+    public async Task<IActionResult> ValidateCreditCard(string creditcardNumber)
     {
 
         var validateResult = await _creditCardService.Validate(creditcardNumber);

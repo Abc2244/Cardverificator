@@ -10,7 +10,7 @@ public class IssuingNetworkData
     public List<int>? StartsWithNumbers { get; set; } = null!;
     public RangeNumber? InRange { get; set; } = null!;
     public List<int> AllowedLengths { get; set; } = null!;
-    public Boolean ValidateCreditCard(string creditCardNumber)
+    public Boolean IsCardFromThisNetwork(string creditCardNumber)
     {
         Boolean isIdentified = false;
 

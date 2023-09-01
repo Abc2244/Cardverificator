@@ -73,7 +73,7 @@ public class CreditCardService : ICreditCardService
         string? foundIssuingNetworkDataName = null;
         foreach (IssuingNetworkData issuingNetworkData in issuingNetworkDataList)
         {
-            if (issuingNetworkData.ValidateCreditCard(creditCardNumber))
+            if (issuingNetworkData.IsCardFromThisNetwork(creditCardNumber))
             {
                 foundIssuingNetworkDataName ??= issuingNetworkData.Name;
                 break;
